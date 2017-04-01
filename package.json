@@ -1,0 +1,25 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "My first nodeJS demo",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.2",
+    "npm": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "make test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xmUser/learning-process.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xmUser/learning-process/issues"
+  },
+  "homepage": "https://github.com/xmUser/learning-process#readme"
+}
