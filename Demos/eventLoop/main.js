@@ -23,3 +23,6 @@ eventEmitter.on('data_received', function(){
 eventEmitter.emit('connection');
 
 console.log("Program execution completed.");
+
+// Open CMD, enter the right path
+// Input node main.js
