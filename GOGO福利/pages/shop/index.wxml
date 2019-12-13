@@ -1,0 +1,22 @@
+<!--pages/shop/index.wxml-->
+<!-- <custom-nav my-property='{{customNavStyle}}' my-flag='{{customFlag}}' /> -->
+<view class='container' wx:show='{{showPage}}'>
+  <view class='header'>
+    <image class='img' src='{{goldImage}}' mode="aspectFit"></image>
+    <view class='num'>{{coin}}</view>
+    <view class='text'>当前金币</view>
+  </view>
+  <view class='list'>
+    <view class='item' wx:if='{{showPage}}' wx:for='{{ list }}'>
+      <view class='title'>{{ item.name }}</view>
+      <text class='price'>{{ item.price }}金币</text>
+      <button class='btn' bindtap='openOrderPage' data-info='{{item}}'>兑换</button>
+      <view class='img-container'>
+        <image class='img' src='{{ item.image }}' mode="aspectFit"></image>
+      </view>
+    </view>
+    <view class='no-content' wx:if='{{ showPage && list.length == 0 }}'>
+      暂无数据
+    </view>
+  </view>
+</view>

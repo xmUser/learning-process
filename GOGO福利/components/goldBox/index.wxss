@@ -1,0 +1,88 @@
+/* components/goleBox/index.wxss */
+
+.container {
+  width: 70vw;
+  height: 72vw;
+  background: rgba(255, 114, 34, 1);
+  border-radius: 2vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.title {
+  width: 70vw;
+  height: 34vw;
+  position: relative;
+}
+
+.title >.img {
+  width: 36vw;
+  height: 34vw;
+  margin: 0 auto;
+  position: absolute;
+  top: -12vw;
+  left: 17vw;
+  z-index: 2;
+}
+
+.title >.img.back {
+  z-index: 1;
+  width: 40vw;
+  height: 38vw;
+  top: -14vw;
+}
+
+.content {
+  text-align: center;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.content > .tips {
+  line-height: 5vw;
+  font-size: 4vw;
+  letter-spacing: 0.5vw;
+}
+
+.content > .tips >.big {
+  font-size: 4.5vw;
+}
+
+.content > .gold {
+  font-size: 8vw;
+  font-family: Lantinghei SC;
+  /* font-weight: 600; */
+  color: rgba(253, 233, 14, 1);
+  -webkit-text-stroke: 1vw rgba(244, 214, 5, 0.3);
+  margin-top: 3vw;
+}
+
+.btn {
+  width: 45vw;
+  height: 8vw;
+  line-height: 8vw;
+  font-size: 4.5vw;
+  font-family: PingFang SC;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(183, 50, 27, 1);
+  background: linear-gradient(180deg, rgba(254, 236, 15, 1), rgba(240, 203, 1, 1));
+  border: 2px solid rgba(253, 217, 15, 1);
+  box-shadow: 2px 2px 4px 3px rgba(217, 57, 34, 1);
+  border-radius: 6vw;
+  margin: 5vw auto;
+  position: relative;
+}
+
+.btn:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: 0 0 4px 0 rgba(217, 57, 34, 1);
+}

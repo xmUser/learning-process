@@ -1,0 +1,204 @@
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #c91f00;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  width: 100vw;
+  height: 10vw;
+  padding: 3vw 0 1vw 0;
+}
+
+.header-left {
+  width: 30vw;
+  margin-left: 5vw;
+  float: left;
+  position: relative;
+}
+
+.header-left > .img {
+  width: 30vw;
+}
+
+.header-left > .coin {
+  width: 15vw;
+  height: 5vw;
+  font-size: 4vw;
+  font-family: MF TongXin (Noncommercial);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 2rpx 0 rgba(63, 36, 11, 1);
+  position: absolute;
+  top: 2vw;
+  right: 5.8vw;
+  text-align: center;
+}
+
+.header-right {
+  width: 20vw;
+  margin-right: 5vw;
+  float: right;
+}
+
+.title {
+  width: 100vw;
+  height: 24vw;
+  text-align: center;
+}
+
+.title>image {
+  width: 90vw;
+}
+
+.turntable {
+  position: relative;
+  top: -5vw;
+  animation: rotate(80deg);
+}
+
+.tips {
+  color: #fff;
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  margin-bottom: 3vw;
+  position: relative;
+  top: -1vw;
+}
+
+.btns {
+  width: 100vw;
+  height: 15vw;
+  padding: 0 5vw;
+  text-align: center;
+  overflow: hidden;
+}
+
+.btns>.btn-left, .btns>.btn-right {
+  width: 44vw;
+  margin: 0 1vw;
+}
+
+.v-in {
+  width: 80vw;
+  height: 14vw;
+  line-height: 14vw;
+  background-color: rgba(244, 231, 207, 1);
+  border-radius: 3vw;
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(74, 48, 18, 1);
+  padding: 0 3vw;
+  margin: 4vw 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.v-in > .back-img {
+  width: 21vw;
+  height: 21vw;
+  position: absolute;
+  left: -1vw;
+  top: -3vw;
+  transform: rotate(-15deg);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.v-in > .video-img {
+  width: 5.5vw;
+  height: 5.5vw;
+  position: absolute;
+  left: 3vw;
+  top: 4.25vw;
+  z-index: 2;
+}
+
+.v-in > .text {
+  margin-left: 8vw;
+  z-index: 2;
+}
+
+.v-in > .v-btn {
+  height: 6vw;
+  line-height: 6vw;
+  padding: 0 2vw;
+  float: right;
+  font-size: 3vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(74, 48, 18, 1);
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(53, 53, 53, 0.9);
+  border-radius: 5vw;
+  position: relative;
+  margin-top: 4vw;
+  z-index: 2;
+}
+
+.v-in .top-right {
+  height: 3.5vw;
+  line-height: 3vw;
+  position: absolute;
+  right: -3vw;
+  top: -3vw;
+  background: rgba(241, 186, 5, 1);
+  border: 1px solid rgba(249, 227, 111, 1);
+  border-radius: 3vw 3vw 3vw 0;
+  font-size: 2vw;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  padding: 0 1.4vw;
+  z-index: 2;
+}
+
+.ad {
+  width: 88vw;
+  margin-bottom: 5vw;
+}
+
+.rule-box, .gold-box {
+  width: 100vw;
+  height: 106vh;
+  color: #fff;
+  background-color: rgba(40, 35, 35, 0.48);
+  position: fixed;
+  top: -6vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.rule-box {
+  left: 100vw;
+  transition: all 0.3s;
+}
+
+.rule-box.show {
+  left: 0;
+}
+
+.prize-box {
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  background-color: rgba(40, 35, 35, 0.48);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}

@@ -1,0 +1,28 @@
+<!--components/prizeBox/index.wxml-->
+<view class='container'>
+  <view class='title'>
+    <image class='img' wx:if='{{prize.status == 1}}' src='{{goldImage}}' mode='aspectFit'></image>
+    <image class='img' wx:elif='{{prize.status == 2}}' src='{{prize.img}}' mode='aspectFit'></image>
+    <image class='img back' src='{{lightImage}}' mode='aspectFit'></image>
+  </view>
+  <view class='content'>
+    <view class='tips'>
+      <text wx:if='{{prize.status == 1}}'>+{{prize.price}}金币</text>
+      <text wx:elif='{{prize.status == 2}}'>{{prize.title}}</text>
+    </view>
+    <view class='btn no-back' bindtap='close' wx:if='{{prize.status == 1}}'>继续抽金币</view>
+    <view class='btn no-back' bindtap='close' wx:elif='{{prize.status == 2}}'>继续抽奖</view>
+    <view class='btn back' bindtap='handleClickVideo' wx:if='{{prize.status == 1}}'>
+      <text>看视频金币翻倍</text>
+      <view class='rtop'>2-3倍</view>
+    </view>
+    <view class='btn back' bindtap='handleClickPrize' wx:if='{{prize.status == 2}}'>
+      <text>领取奖励</text>
+    </view>
+  </view>
+  <view class='line'></view>
+  <view class='ad' wx:if='{{adBanner}}'>
+    <!-- <image class='img' src='{{adImg}}' mode='aspectFit'></image> -->
+    <ad unit-id="{{adUnitId}}" ad-intervals="{{adRefreshTime}}" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+  </view>
+</view>

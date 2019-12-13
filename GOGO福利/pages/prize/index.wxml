@@ -1,0 +1,25 @@
+<!--pages/prize/index.wxml-->
+<!-- <custom-nav my-property='{{customNavStyle}}' my-flag='{{ customFlag}}' /> -->
+<view class='container' style='background-image: url({{ backImage }})'>
+  <view class='title'>兑换记录</view>
+  <view class='box'>
+    <view class='item' wx:if='{{showPage}}' wx:for='{{ list }}' wx:key='index'>
+      <view class='left'>
+        <image class='img' src='{{ item.image }}' mode='aspectFit'></image>
+      </view>
+      <view class='mid'>
+        <view class='name'>{{ item.name }}</view>
+        <view class='date'>{{ item.date }}</view>
+      </view>
+      <view class='right'>
+        <text wx:if="{{ item.status == 1 }}">已领取</text>
+        <text class='btn' wx:elif='{{ item.status == 2 }}' bindtap='handleGetBtn' data-info='{{ item }}'>待领取</text>
+        <text wx:elif="{{ item.status == 3 }}">已过期</text>
+        <text wx:elif="{{ item.status == 4 }}">已领取</text>
+      </view>
+    </view>
+    <view class='no-content' wx:if='{{ showPage && list.length == 0 }}'>
+      暂无数据
+    </view>
+  </view>
+</view>

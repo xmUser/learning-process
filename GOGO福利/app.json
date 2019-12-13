@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/shop/index",
+    "pages/prize/index",
+    "pages/order/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF4B00",
+    "navigationBarTitleText": "福利GOGO",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "default"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "ruleBox": "components/ruleBox/index",
+    "goldBox": "components/goldBox/index",
+    "prizeBox": "components/prizeBox/index",
+    "zhuanpan": "components/zhuanpan/zhuanpan",
+    "custom-nav": "components/custom-nav/index"
+  },
+  "networkTimeout": {
+    "request": 10000
+  }
+}

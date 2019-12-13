@@ -1,0 +1,44 @@
+<!--pages/order/index.wxml-->
+<!-- <custom-nav my-property='{{customNavStyle}}' my-flag='{{customFlag}}' /> -->
+<view class='container'>
+  <view class='title'>订单信息</view>
+  <view class='box'>
+    <view class='name'>{{ goods.name }}</view>
+    <view class='left'>
+      <image class='img' src='{{goods.image}}' mode='aspectFit'></image>
+    </view>
+    <view class='right'>
+      <view class='item'>
+        <view class='lt'>商品简介：</view>
+        <view class='rt'>{{goods.description}}</view>
+      </view>
+      <view class='item'>
+        <view class='lt'>消耗金币：</view>
+        <view class='rt'>{{goods.price}}金币</view>
+      </view>
+      <view class='item'>
+        <view class='lt'>配送方式：</view>
+        <view class='rt'>普通快递</view>
+      </view>
+    </view>
+  </view>
+  <view class='form'>
+    <form bindsubmit="formSubmit">
+      <view class="section">
+        <text class='left'>姓名</text>
+        <input class='right' type='text' name="name" placeholder="请输入姓名" />
+      </view>
+      <view class="section">
+        <text class='left'>联系手机</text>
+        <input class='right' type='number' name="phoneNumber" placeholder="请输入手机号码" />
+      </view>
+      <view class="section">
+        <text class='left'>联系地址</text>
+        <textarea class='right txt' name="address" placeholder="请输入联系地址" />
+      </view>
+      <view class="btn-area">
+        <button class='primary' formType="submit">提交订单</button>
+      </view>
+    </form>
+  </view>
+</view>

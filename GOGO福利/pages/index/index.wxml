@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<!-- <custom-nav my-property='{{customNavStyle}}' my-flag='{{customFlag}}' /> -->
+<view class='container' style='background-image: url({{ backImage }})' wx:show='{{showPage}}'>
+  <!-- 头部按钮 -->
+  <view class='header'>
+    <view class='header-left'>
+      <image class='img' src='{{coinsImage}}' mode="widthFix"></image>
+      <view class='coin'>{{userGold}}</view>
+    </view>
+    <image class='header-right' src='{{guizeImage}}' mode="widthFix" bindtap='openRuleBox'></image>
+  </view>
+  <!-- 头部按钮 -->
+  <!-- 幸运大转盘-文字 -->
+  <view class='title'>
+    <image src='{{xyImage}}' mode="widthFix"></image>
+  </view>
+  <!-- 幸运大转盘-文字 -->
+  <!-- 幸运大转盘 -->
+  <view class='turntable'>
+    <zhuanpan wx:if='{{showPage}}' id='zhuanpan' bind:getRoll='getRoll' bind:login='handleClickLogin' bind:myData='getData' bind:myAwards="getAwards" bind:startZhuan="startZhuan" size='{{size}}' musicflg='{{musicflg}}' fastJuedin='{{fastJuedin}}' repeat='{{repeat}}'
+      zhuanpanArr='{{xiaojuedingArr}}' awardsConfig='{{awardsConfig}}' result="{{rollResult}}" disabled='{{!isLogin}}' showName='{{showTruntableItemName}}'></zhuanpan>
+  </view>
+  <!-- 幸运大转盘 -->
+  <view class='tips'>今日剩余次数：{{rollCount}}/{{rollMax}}</view>
+  <view class='btns'>
+    <image class='btn-left' src='{{jiluImage}}' mode="widthFix" bindtap='openPrizePage'></image>
+    <image class='btn-right' src='{{jinbiduihuanImage}}' mode="widthFix" bindtap='openShopPage'></image>
+  </view>
+  <!-- 视频入口 -->
+  <view class='v-in'>
+    <image class='back-img' src='{{videoImage}}' mode='aspectFit'></image>
+    <image class='video-img' src='{{videoImage}}' mode='aspectFit'></image>
+    <text class='text'>看视频 增加抽奖机会</text>
+    <view class='v-btn' bindtap='openVideo'>
+      <text>去观看</text>
+      <text class='top-right'>福利</text>
+    </view>
+  </view>
+  <!-- 视频入口 -->
+  <!-- 贴片广告 -->
+  <view class='ad' wx:if='{{adBanner}}'>
+    <!-- <image class='img' src='{{adweiImage}}' mode="widthFix"></image> -->
+    <ad unit-id="{{adUnitId}}" ad-intervals="{{adRefreshTime}}" bindload="adLoad" binderror="adError" bindclose="adClose"></ad>
+  </view>
+  <!-- 贴片广告 -->
+  <!-- 游戏规则 -->
+  <view class='rule-box {{ showRuleBox ? "show" : "" }}' catchtouchmove='true'>
+    <ruleBox list='{{ruleList}}' bindclose="closeRuleBox"></ruleBox>
+  </view>
+  <!-- 游戏规则 -->
+  <!-- 新用户领金币 -->
+  <view class='gold-box' wx:if='{{showGoldBox}}' catchtouchmove='true'>
+    <goldBox tImg="{{goldImage}}" lightImage='{{lightImage}}' number='{{newUserPrice}}' bindclose="closeGoldBox"></goldBox>
+  </view>
+  <!-- 新用户领金币 -->
+  <!-- 抽奖结果弹窗 -->
+  <view class='prize-box' wx:if="{{showPrizeBox}}" catchtouchmove='true'>
+    <prizeBox adImg="{{adweiImage}}" lightImage='{{lightImage}}' goldImage='{{goldImage}}' prize='{{currentPrize}}' bind:switchPage="switchPage" bindclose="closePrizeBox"></prizeBox>
+  </view>
+  <!-- 抽奖结果弹窗 -->
+</view>

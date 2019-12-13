@@ -1,0 +1,13 @@
+<!--components/ruleBox/index.wxml-->
+<view class='container'>
+  <view class='title'>
+    <text class='text'>游戏规则</text>
+  </view>
+  <scroll-view scroll-y="true" class='content'>
+    <view class='scroll-view-item' wx:for='{{ list }}' wx:key='index'>
+      <view class='left'>{{ index + 1 }}</view>
+      <view class='right'>{{ item }}</view>
+    </view>
+  </scroll-view>
+  <view class='btn' bindtap='close'>确定</view>
+</view>

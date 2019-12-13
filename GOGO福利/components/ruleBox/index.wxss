@@ -1,0 +1,102 @@
+/* components/ruleBox/index.wxss */
+
+.container {
+  width: 90vw;
+  height: 92vw;
+  background: rgba(255, 114, 34, 1);
+  border-radius: 2vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.title {
+  width: 250rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: linear-gradient(0deg, rgba(227, 121, 63, 1) 0%, rgba(242, 207, 108, 1) 100%);
+  border: 4rpx solid rgba(235, 168, 173, 0.7);
+  box-shadow: 0px 4rpx 6rpx 0px rgba(169, 65, 93, 0.75);
+  border-radius: 56rpx;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -4vw;
+}
+
+.title > .text {
+  font-size: 34rpx;
+  font-family: PingFang SC;
+  font-weight: 600;
+  letter-spacing: 6rpx;
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 2px 4px rgba(236, 119, 76, 0.73);
+}
+
+.content {
+  width: 80vw;
+  height: 54vw;
+  max-height: 60vw;
+  font-size: 3vw;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 1);
+  border: 1px dotted rgba(255, 255, 255, 0.8);
+  border-radius: 2vw;
+  margin: 2vw auto;
+  padding: 3vw;
+}
+
+.scroll-view-item {
+  line-height: 5vw;
+  margin: 2vw 0;
+}
+
+.scroll-view-item  .left {
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+  border-radius: 26rpx;
+  text-align: center;
+  font-size: 20rpx;
+  font-family: Adobe Heiti Std;
+  font-weight: normal;
+  color: rgba(233, 65, 44, 1);
+  background-color: #fff;
+  margin-top: 6rpx;
+  float: left;
+}
+
+.scroll-view-item  .right {
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 36rpx;
+}
+
+.btn {
+  width: 50vw;
+  height: 7vw;
+  line-height: 7vw;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(183, 50, 27, 1);
+  background: linear-gradient(180deg, rgba(254, 236, 15, 1), rgba(240, 203, 1, 1));
+  border: 2px solid rgba(253, 217, 15, 1);
+  box-shadow: 2px 2px 4px 3px rgba(217, 57, 34, 1);
+  border-radius: 30rpx;
+  margin: 5vw auto;
+  position: relative;
+}
+
+.btn:active {
+  top: 2px;
+  left: 2px;
+  box-shadow: 0 0 4px 0 rgba(217, 57, 34, 1);
+}

@@ -1,0 +1,15 @@
+<!--components/goleBox/index.wxml-->
+<view class='container'>
+  <view class='title'>
+    <image class='img' src='{{tImg}}' mode='aspectFit'></image>
+    <image class='img back' src='{{lightImage}}' mode='aspectFit'></image>
+  </view>
+  <view class='content'>
+    <view class='tips'>
+      <text>恭喜你获得</text>
+      <text class='big'>金币福利</text>
+    </view>
+    <view class='gold'>送你 {{number}}金币</view>
+  </view>
+  <view class='btn' bindtap='close'>确定</view>
+</view>

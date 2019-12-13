@@ -1,0 +1,129 @@
+/* pages/order/index.wxss */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background: rgba(240, 240, 240, 1);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  text-align: center;
+  margin: 4vw 0 6vw 0;
+}
+
+.box {
+  width: 80vw;
+  min-height: 34vw;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(203, 203, 203, 1);
+  border-radius: 4px;
+  padding: 3vw 5vw;
+  color: #333;
+  margin: 0 auto;
+}
+
+.box > .name {
+  font-size: 5vw;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  margin-bottom: 3vw;
+}
+
+.box>.left {
+  width: 35vw;
+  height: 25vw;
+  float: left;
+}
+
+.box>.left>.img {
+  width: 33vw;
+  height: 23vw;
+  margin: 1vw;
+}
+
+.box > .right {
+  width: 45vw;
+  margin-left: 38vw;
+  font-size: 3vw;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.box > .right > .item {
+  width: 100%;
+}
+
+.box > .right .lt {
+  width: auto;
+  float: left;
+}
+
+.box > .right .rt {
+  max-height: 15vw;
+  margin-left: 15vw;
+  overflow-y: auto;
+}
+
+.form {
+  width: 90vw;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 13vw;
+  overflow: hidden;
+}
+
+.form .section {
+  margin: 3vw 0;
+}
+
+.form .left {
+  width: 20vw;
+  height: 10vw;
+  line-height: 10vw;
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  float: left;
+}
+
+.form .right {
+  width: 62vw;
+  height: 10vw;
+  font-size: 3.8vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(51, 51, 51, 1);
+  background-color: #fff;
+  margin-left: 22vw;
+  padding: 0 3vw;
+}
+
+.form .txt {
+  height: 25vw;
+  padding: 3vw;
+}
+
+.primary {
+  width: 90vw;
+  height: 12vw;
+  line-height: 12vw;
+  font-size: 4vw;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 119, 41, 1);
+  border-radius: 6vw;
+  position: fixed;
+  bottom: 10vw;
+  left: 5vw;
+}
